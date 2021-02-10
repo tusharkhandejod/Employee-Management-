@@ -1,3 +1,4 @@
+//This is server file
 const express = require('express');
 const dbConfig = require('./Config/config');
 const route = require('./Routes/Route');
