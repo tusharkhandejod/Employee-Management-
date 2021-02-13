@@ -1,0 +1,45 @@
+[
+    {
+        "firstName": "Tushar",
+        "lastName": "Khandejod",
+        "email": "tusharkhandejod@mail.com",
+        "mobile": "9158331575",
+        "birthdate": "24-02-1998",
+        "joindate": "10-03-2019",
+        "jobrole":"Software Engineer"
+
+    },{
+        "firstName": "Tejas",
+        "lastName": "Khandejod",
+        "email": "tejaskhandejod@mail.com",
+        "mobile": "8530649158",
+        "birthdate": "16-11-2001",
+        "joindate": "20-05-2020",
+        "jobrole":"IT Engineer"
+    },{
+        "firstName": "Mrunal",
+        "lastName": "Gadhave",
+        "email": "mrunalgadhave@mail.com",
+        "mobile": "8862010179",
+        "birthdate": "08-10-1996",
+        "joindate": "7-10-2010",
+        "jobrole":"IT Engineer"
+    },{
+        "firstName": "Shailesh",
+        "lastName": "Tikhe",
+        "email": "shaileshtikhe@mail.com",
+        "mobile": "9921927642",
+        "birthdate": "16-08-1993",
+        "joindate": "23-07-2015",
+        "jobrole":"Software Engineer"
+    },{
+        "firstName": "Mangesh",
+        "lastName": "Tikhe",
+        "email": "mangeshtikhe@mail.com",
+        "mobile": "9765534797",
+        "birthdate": "27-02-1998",
+        "joindate": "19-08-2014",
+        "jobrole":"Pharmacist"
+    }
+
+]

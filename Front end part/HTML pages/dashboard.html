@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="../CSS files/dashboard.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="titleBar">
+            <br />
+            <h1><b>Employee Management System</b></h1>
+        </div>
+        <br/>
+        <button class="button">
+            <a href="./formPage.html" class="add-button">
+                Add Employee
+            </a>
+        </button>
+        <div class="main-content1">
+            <div class="header-content">
+                <div class="emp-detail-text">
+                    Employee Details
+                </div>
+               
+            </div>
+        </div>
+        <div class="main-content2">
+        <table class="table" id="table">
+            <thead class="thead-dark">
+               <tr>
+                  <th scope="col">First Name</th> 
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Email ID</th>
+                  <th scope="col">Mobile No.</th>
+                  <th scope="col">Birth Date</th>  
+                  <th scope="col">Join Date</th>
+                  <th scope="col">Job Role</th> 
+               </tr>    
+            </thead>  
+            <script>
+                
+                $(document).ready(function(){
+                    $.getJSON("employeeData.json",function(data){
+                        var employee_data ='';
+                        $.each(data,function(key,value){
+                              employee_data += '<tr><td><br/></td></tr>';
+                              employee_data += '<tr>';
+                              employee_data += '<td>'+value.firstName+'</td>';
+                              employee_data += '<td>'+value.lastName+'</td>';
+                              employee_data += '<td>'+value.email+'</td>';
+                              employee_data += '<td>'+value.mobile+'</td>';
+                              employee_data += '<td>'+value.birthdate+'</td>';
+                              employee_data += '<td>'+value.joindate+'</td>';
+                              employee_data += '<td>'+value.jobrole+'</td>';
+                              employee_data += '</tr>';
+                              
+                             
+                              
+                              
+                        });
+                        $('#table').append(employee_data);
+                    });
+                });    
+                
+              </script>  
+         </table>
+        </div>
+    </div>
+</body>
+
+</html>
