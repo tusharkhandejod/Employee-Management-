@@ -6,7 +6,16 @@ text-align: center;
     margin: 0px;
     padding: 10px;
     align-items: center;
+    width: 100%;
+    border: solid;
 }
+
+hr{
+    border-width: 3px;
+    border-style: solid;
+}
+
+
 
 .header-content {
     display: flex;
@@ -20,7 +29,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     min-height: calc(100vh-80px);
-    background-color: #f7f7f7;
+    background-color: #c52611;
     padding: 30px 0 10px;
     box-sizing: border-box;
 }

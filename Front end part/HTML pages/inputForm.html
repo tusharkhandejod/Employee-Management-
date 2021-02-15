@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <mata charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Basic input form</title>
+    </mata>
+</head>
+<link rel="stylesheet" href="../CSS files/inputForm.css">
+
+<body>
+    <form>
+        <header class="headerContainer">Employee Registration Form</header><br/>
+        <div>
+            <label for="text">First Name :</label>
+            <input type="text" id="text" name="text" required>
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="text">Last Name :</label>
+            <input type="text" id="text2" name="text" required>
+            <error-output class="text2-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="email">Email ID :</label>
+            <input type="text" id="email" name="email" required>
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+        <div>
+            <label for="number">Mobile Number :</label>
+            <input type="text" id="number" name="number" required>
+            <error-output class="number-error" for="number"></error-output>
+        </div>
+        <div>
+            <label for="Date">Birth date :</label>
+            <input type="date" id="date" name="date" required>
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="number2">Age :</label>
+            <input type="text" id="number2" name="number2" required>
+            <error-output class="number2-error" for="number2"></error-output>
+        </div>
+        <div>
+            <label for="text">Job Role :</label>
+            <input type="text" id="text3" name="text" required>
+            <error-output class="text3-error" for="text"></error-output>
+        </div>
+        
+        <div>
+            <button>Submit</button>
+        </div>
+        <br/>
+        <button>
+            <a href="../HTML pages/dashboard.html">Cancel</a>
+        </button>
+    </form>
+    <script src="../JavaScript pages/inputForm1.js"></script>
+</body>
+
+</html>
