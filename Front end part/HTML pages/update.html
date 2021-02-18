@@ -4,17 +4,18 @@
 <head>
     <mata charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Basic input form</title>
+        <title>Edit form</title>
     </mata>
 </head>
 <link rel="stylesheet" href="../CSS files/inputForm.css">
-<script src="../JavaScript pages/PostMethodUsingAjax.js"></script>
 <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="../JavaScript pages/PostMethodUsingAjax.js"></script>
+<script src="../JavaScript pages/MethodsUsingAjax.js"></script>
+<script src="../JavaScript pages/update.js"></script>
 
-
-<body>
-    <form onsubmit="register(event); return false">
-        <div class="headerContainer">Add Employee Form</div><br/>
+<body onload="onLoad();">
+    <form>
+        <div class="headerContainer">Edit Employee Data</div><br/>
         <div>
             <input type="text" id="text" placeholder="First Name :" name="text" required>
             <error-output class="text-error" for="text"></span>
@@ -42,7 +43,9 @@
         </div>
         <br/>
         <div>
-            <input type="submit" onclick="validate();register(event);clickButton(event);"  value="Register" class="btn">
+            <form action="../HTML pages/dashboard.html" class="inline">
+            <input type="submit" onclick="validate();update();;"  value="Update" class="btn">
+            </form>
         </div>
         <br/>
         
@@ -50,6 +53,9 @@
         
     </form>
     <script src="../JavaScript pages/inputForm1.js"></script>
+
 </body>
 
+
 </html>
+

@@ -30,15 +30,22 @@ div {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-label,
+label{
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    left: 20px  
+}
 input,
 button {
     font-size: 16px;
     line-height: 1.5;
+    width: 60%;
 }
 
 label {
@@ -52,7 +59,7 @@ input {
 }
 
 button {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 

@@ -4,7 +4,6 @@
         "lastName": "Khandejod",
         "email": "tusharkhandejod@mail.com",
         "mobile": "9158331575",
-        "birthdate": "24-02-1998",
         "age": "23",
         "jobrole":"Software Engineer"
 
@@ -13,7 +12,6 @@
         "lastName": "Khandejod",
         "email": "tejaskhandejod@mail.com",
         "mobile": "8530649158",
-        "birthdate": "16-11-2001",
         "age": "19",
         "jobrole":"IT Engineer"
     },{
@@ -21,7 +19,6 @@
         "lastName": "Gadhave",
         "email": "mrunalgadhave@mail.com",
         "mobile": "8862010179",
-        "birthdate": "08-10-1996",
         "age": "24",
         "jobrole":"IT Engineer"
     },{
@@ -29,7 +26,6 @@
         "lastName": "Tikhe",
         "email": "shaileshtikhe@mail.com",
         "mobile": "9921927642",
-        "birthdate": "16-08-1993",
         "age": "28",
         "jobrole":"Software Engineer"
     },{
@@ -37,7 +33,6 @@
         "lastName": "Tikhe",
         "email": "mangeshtikhe@mail.com",
         "mobile": "9765534797",
-        "birthdate": "27-02-1998",
         "age": "30",
         "jobrole":"Pharmacist"
     },{
@@ -45,7 +40,6 @@
         "lastName": "Rajegore",
         "email": "sumitrajegore@mail.com",
         "mobile": "9588676783",
-        "birthdate": "03-05-1997",
         "age": "23",
         "jobrole":"E&TC Engineer"
     },{
@@ -53,7 +47,6 @@
         "lastName": "Rajegore",
         "email": "surajrajegore@mail.com",
         "mobile": "8806393680",
-        "birthdate": "01-08-1995",
         "age": "26",
         "jobrole":"Pharmacist"
     },{
@@ -61,7 +54,6 @@
         "lastName": "Deshmukh",
         "email": "apekshadeshmukh@gmail.com",
         "mobile": "9226782169",
-        "birthdate": "27-01-1997",
         "age": "24",
         "jobrole":"Doctor" 
     }

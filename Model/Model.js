@@ -6,25 +6,28 @@ const mongoose = require('mongoose')
 const schema = new mongoose.Schema({
     firstName: {
         type: String,
-        required: true
+        required: [true, 'First name is compulsory']
     },
     lastName: {
         type: String,
-        required: true
+        required: [true, 'Last name is compulsory']
     },
     email: {
         type: String,
-        required: true
-
+        required: [true, 'Email ID is compulsory'],
+        unique: true
     },
     mobile: {
         type: Number,
-        required: true
+        required: [true, 'Mobile number is compulsory']
     },
-    
+    age: {
+        type: Number,
+        required: [true, 'Age is compulsory']
+    },
     jobRole: {
         type: String,
-        required: true
+        required: [true, 'Job role is compulsory']
     },
 
 }, {

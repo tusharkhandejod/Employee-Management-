@@ -8,6 +8,8 @@
     <title>Employee Management System</title>
     <link rel="stylesheet" href="../CSS files/dashboard.css">
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../JavaScript pages/MethodsUsingAjax.js"></script>
+    
 </head>
 
 <body>
@@ -18,11 +20,13 @@
         </div>
         <br/>
         <hr>
+        <form action="../HTML pages/inputForm.html" class="inline">
         <button class="button">
-            <a href="./inputForm.html" class="add-button">
+            
                 Add Employee
-            </a>
+            
         </button>
+        </form>
         <br/>
         <div class="main-content1">
             <div class="header-content">
@@ -40,34 +44,13 @@
                   <th>Last Name</th>
                   <th>Email ID</th>
                   <th>Mobile No.</th>
-                  <th>Birth Date</th>  
-                  <th>Age</th>
-                  <th>Job Role</th> 
+                  <th>Age</th>  
+                  <th>Job Role</th>
+                  <th>Edit</th>
+                  <th>Delete</th> 
                </tr>    
             </th>  
-            <script>
-                
-                $(document).ready(function(){
-                    $.getJSON("employeeData.json",function(data){
-                        var employee_data ='';
-                        $.each(data,function(key,value){
-                              employee_data += '<tr><td><br/></td></tr>';
-                              employee_data += '<tr>';
-                              employee_data += '<td>'+value.firstName+'</td>';
-                              employee_data += '<td>'+value.lastName+'</td>';
-                              employee_data += '<td>'+value.email+'</td>';
-                              employee_data += '<td>'+value.mobile+'</td>';
-                              employee_data += '<td>'+value.birthdate+'</td>';
-                              employee_data += '<td>'+value.age+'</td>';
-                              employee_data += '<td>'+value.jobrole+'</td>';
-                              employee_data += '</tr>';
-                              
-                            });
-                        $('#table').append(employee_data);
-                    });
-                });    
-                
-              </script>  
+        
          </table>
         </div>
     </div>
